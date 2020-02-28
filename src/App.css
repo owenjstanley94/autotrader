@@ -1,38 +1,69 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.listingCard {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px lightgray;
+    border-radius: 10px;
+    width: 20%;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listingCard img {
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#allCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+#prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+    width: 200px;
+    margin: 3px;
+    height: auto;
+}
+
+#car {
+    color: blue;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+}
+
+#price {
+    color: crimson;
+    font-weight: bold;
+}
+
+#saving {
+    color: white;
+    padding: 3px;
+    background-color: lime;
+    border: 1px solid lime;
+    border-radius: 3px;
+}
+
+#rrp {
+    color: darkgrey;
+    text-decoration: line-through;
+    font-weight: bold;
 }
